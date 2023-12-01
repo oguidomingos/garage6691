@@ -1,0 +1,39 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply bg-background text-foreground font-sans;
+}
+
+
+.card1-bg {
+	position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url('./imgs/card3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card2-bg {
+	position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url('./imgs/card2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card3-bg {
+	position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)) , url('./imgs/card1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
